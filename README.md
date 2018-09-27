@@ -14,7 +14,7 @@ Simple and easy-to-configure REST server made in PHP.
 
 I made it just to create different fake REST servers very fast for testing purposes.
 
-To add new paths (routes) and methods, the developer just needs to create a new folder (and subfolders if needed) which represent the route and inside one file per method named [method_desired].php (for example, put.php).
+To add new paths (routes) and methods, the developer just needs to create a new folder structure (folder and subfolders if needed) which represents the route and inside one file per method named [method_desired].php (for example, put.php).
 
 If you do not have a REST client, the server can be tested on any web browser by adding the "debug=1" parameter to the URL, as for example: http://localhost/fake_rest_server/src/index.php/route_1/subroute?method=post&debug=1&username=Joan
 
