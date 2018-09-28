@@ -87,13 +87,13 @@ If you do not have a REST client, the server can be tested on any web browser by
 
 Following the [example above](#example), you can use a web browser to visit the following links:
 
-http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=1 (it should shows "John Doe likes eating meat")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=1 (it should show "John Doe likes eating meat")
 
-http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=2 (it should shows "Joan Alba Maldonado likes eating pizza")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=2 (it should show "Joan Alba Maldonado likes eating pizza")
 
-http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=3 (it should shows "User cannot be found! (id=3)")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=3 (it should show "User cannot be found! (id=3)")
 
-http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1 (it should shows "No id sent!")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1 (it should show "No id sent!")
 
 Note that the "_/_" character at the end of the route is optional.
 
