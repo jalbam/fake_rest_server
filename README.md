@@ -52,13 +52,13 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 		"1" =>
 			Array
 			(
-				"name" => "John Doe"
+				"name" => "John Doe",
 				"favouriteFood" => "meat"
 			),
 		"2" =>
 			Array
 			(
-				"name" => "Joan Alba Maldonado"
+				"name" => "Joan Alba Maldonado",
 				"favouriteFood" => "pizza"
 			)
 	);
@@ -69,30 +69,31 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 
 4) Inside the **myRESTService/user/get.php** file put the following:
 ```php
-if ($usernameId === "") { echo "No id sent!"; }
-else if (array_key_exists($usernameId, $usersData))
-{
-	echo $usersData[$usernameId]["name"] . " likes eating " . $usersData[$usernameId]["pizza"];
-}
-else { echo "User cannot be found! (id=" . $usernameId . ")"; }
+<?php
+	if ($usernameId === "") { echo "No id sent!"; }
+	else if (array_key_exists($usernameId, $usersData))
+	{
+		echo $usersData[$usernameId]["name"] . " likes eating " . $usersData[$usernameId]["favouriteFood"];
+	}
+	else { echo "User cannot be found! (id=" . $usernameId . ")"; }
 ```
 
-5) With this, we will have our REST server configured with the **myRESTService/user/** route, accepting the **GET** method with the **id** parameter.
+5) With this, we will have our REST server configured with the **myRESTService/user/** route, accepting the **GET** method with the **id** parameter. This example can be found in the **[example_easy](example_easy)** folder.
 
 
 ## Testing the server
 
-If you do not have a REST client, the server can be tested on any web browser by adding the "debug=1" parameter to the URL, as for example: http://localhost/fake_rest_server/src/index.php/route_1/subroute?method=post&debug=1&username=Joan
+If you do not have a REST client, the server can be tested on any web browser by adding the **debug=1** parameter to the URL as well as the **method** parameter with the method desired (not needed if the method is **GET**), as for example: http://localhost/fake_rest_server/src/index.php/route_1/subroute?method=post&debug=1&username=Joan
 
 Following the [example above](#example), you can use a web browser to visit the following links:
 
-http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug=1&id=1 (it should shows "John Doe likes eating meat")
+http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=1 (it should shows "John Doe likes eating meat")
 
-http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug=1&id=2 (it should shows "Joan Alba Maldonado likes eating pizza")
+http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=2 (it should shows "Joan Alba Maldonado likes eating pizza")
 
-http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug=1&id=3 (it should shows "User cannot be found! (id=3)")
+http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=3 (it should shows "User cannot be found! (id=3)")
 
-http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug=1 (it should shows "No id sent!")
+http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1 (it should shows "No id sent!")
 
 
 ## Final comments
