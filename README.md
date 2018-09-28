@@ -69,7 +69,11 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 
 4) Inside the **myRESTService/user/get.php** file put the following:
 ```php
-if (array_key_exists($usernameId, $usersData)) { echo $usersData[$usernameId]["name"] . " likes eating " . $usersData[$usernameId]["pizza"]; }
+if ($usernameId === "") { echo "No id sent!"; }
+else if (array_key_exists($usernameId, $usersData))
+{
+	echo $usersData[$usernameId]["name"] . " likes eating " . $usersData[$usernameId]["pizza"];
+}
 else { echo "User cannot be found! (id=" . $usernameId . ")"; }
 ```
 
@@ -87,6 +91,8 @@ http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug
 http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug=1&id=2 (it should shows "Joan Alba Maldonado likes eating pizza")
 
 http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug=1&id=3 (it should shows "User cannot be found! (id=3)")
+
+http://your_server/route_to_the_REST_server/myRESTService/user/?method=get&debug=1 (it should shows "No id sent!")
 
 
 ## Final comments
