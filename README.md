@@ -17,11 +17,11 @@ I made it just to create different fake REST servers very fast for testing purpo
 
 ## Configuring the server
 
-To add new paths (routes) and methods, the developer just needs to create a new folder structure (folder and subfolders if needed) which represents the route and inside one file per method named [method_desired].php (for example, put.php).
+To add new paths (routes) and methods, the developer just needs to create a new folder structure (folder and subfolders if needed) which represents the route and inside one file per method named _[method_desired].php_ (for example, _put.php_).
 
-You will only the files inside the **src** folder.
+To start developing your REST server, you will only need to download the files inside the **src** folder.
 
-You may want to take a look at the **[src/_code/functions.php](src/_code/functions.php)** file (the engine will include it automatically) as it provides some useful functions. There you can also add new functions or modify the existing ones.
+You may want to take a look at the **[src/_code/functions.php](src/_code/functions.php)** file (the engine will include it automatically) as it provides some basic but useful functions. There you can also add new functions or modify the existing ones.
 
 If you want to add data, you can use the **[src/_code/data/data.php](src/_code/data/data.php)** file (automatically included by the engine).
 
