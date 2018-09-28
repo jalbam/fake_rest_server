@@ -100,4 +100,6 @@ Note that the "_/_" character at the end of the route is optional.
 
 ## Final comments
 
-It is very easy to extend using PHP language. The code already includes some routes, methods, functions and data (user accounts, etc.) as examples (in the "example" folder) but they can be deleted. The folder "route_1" and all of its content (inside the "src" folder) can also be deleted since it is just an example.
+It is very easy to extend using PHP language. The project already includes some examples with routes, methods, functions and data as user accounts, etc. as examples (in both the **[example](example)** and the **[example_easy](example_easy)** folder) but they can be deleted.
+
+The only really-needed code is located in the **[src](src)** folder. The folder "route_1" and all of its content (inside the "src" folder) can also be deleted since it is just an example.
