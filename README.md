@@ -67,7 +67,7 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 	$usernameId = getVariable("id"); //"getVariable" and other functions available in the "src/_code/functions.php" file.
 ```
 
-4) Inside the **myRESTService/user/get.php** file put the following:
+4) Inside the **myRESTService/user/get.php** file put the following code:
 ```php
 <?php
 	if ($usernameId === "") { echo "No id sent!"; }
@@ -87,13 +87,15 @@ If you do not have a REST client, the server can be tested on any web browser by
 
 Following the [example above](#example), you can use a web browser to visit the following links:
 
-http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=1 (it should shows "John Doe likes eating meat")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=1 (it should shows "John Doe likes eating meat")
 
-http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=2 (it should shows "Joan Alba Maldonado likes eating pizza")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=2 (it should shows "Joan Alba Maldonado likes eating pizza")
 
-http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=3 (it should shows "User cannot be found! (id=3)")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1&id=3 (it should shows "User cannot be found! (id=3)")
 
-http://your_server/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1 (it should shows "No id sent!")
+http://localhost/route_to_the_REST_server/index.php/myRESTService/user/?method=get&debug=1 (it should shows "No id sent!")
+
+Note that the "_/_" character at the end of the route is optional.
 
 
 ## Final comments
