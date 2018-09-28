@@ -103,3 +103,7 @@ Note that the "_/_" character at the end of the route is optional.
 It is very easy to extend using PHP language. The project already includes some examples with routes, methods, functions and data as user accounts, etc. as examples (in both the **[example](example)** and the **[example_easy](example_easy)** folder) but they can be deleted.
 
 The only really-needed code is located in the **[src](src)** folder. Inside of it, the **[route_1](src/route_1)** folder and all of its content can also be deleted since it is just an example.
+
+
+## License
+This project can be used, reproduced, distributed and modified freely for any non-commercial purposes but always keeping the author's name and copyright clauses. Other than that, just use this project as you wish but never sell it!
