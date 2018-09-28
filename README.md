@@ -38,11 +38,11 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 <a name="example"></a>
 ### Example:
 
-1) In the root folder, create the **myRESTService** folder.
+1) In the root folder, create a folder called **myRESTService**.
 
 2) Inside the **myRESTService** folder we have just created, create another folder called **user** and inside of it create two files: **index.php** and **get.php**.
 
-3) Inside the **index.php**, place the following code:
+3) Inside the **myRESTService/user/index.php** file, place the following code:
 ```php
 <?php
 	//Username info (this could be in the "src/_code/config.php" file, but it is just an example):
@@ -67,7 +67,7 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 	$usernameId = getVariable("id"); //"getVariable" and other functions available in the "src/_code/functions.php" file.
 ```
 
-4) Inside the **get.php** file put the following:
+4) Inside the **myRESTService/user/get.php** file put the following:
 ```php
 if (array_key_exists($usernameId, $usersData)) { echo $usersData[$usernameId]["name"] . " likes eating " . $usersData[$usernameId]["pizza"]; }
 else { echo "User cannot be found! (id=" . $usernameId . ")"; }
