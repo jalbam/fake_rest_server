@@ -4,7 +4,7 @@
     "description": "Simple and easy-to-configure REST server made in PHP.",
     "keywords": ["REST", "server", "easy", "lightweight", "fast", "folders", "directories"],
     "homepage": "https://github.com/jalbam/fake_rest_server",
-    "license": "Read LICENSE file.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Joan Alba Maldonado",
