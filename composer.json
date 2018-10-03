@@ -1,0 +1,19 @@
+{
+    "name": "jalbam/fake_rest_server",
+    "type": "project",
+    "description": "Simple and easy-to-configure REST server made in PHP.",
+    "keywords": ["REST", "server", "easy", "lightweight", "fast", "folders", "directories"],
+    "homepage": "https://github.com/jalbam/fake_rest_server",
+    "license": "Read LICENSE file.",
+    "authors": [
+        {
+            "name": "Joan Alba Maldonado",
+            "email": "workindalian@gmail.com",
+            "homepage": "http://joanalbamaldonado.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=4.0.0"
+    }
+}
