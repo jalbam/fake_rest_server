@@ -12,7 +12,7 @@ Version: no version
 
 Simple and easy-to-configure REST server made in PHP.
 
-I made it just to create different fake REST servers very fast for testing purposes.
+I made it just to create different REST servers very fast for testing purposes.
 
 
 ## Configuring the server
