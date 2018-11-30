@@ -45,7 +45,7 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 3) Inside the **myRESTService/user/index.php** file, place the following code:
 ```php
 <?php
-	//Username info (this could be in the "src/_code/config.php" file, but it is just an example):
+	//Users info (this could be in the "src/_code/config.php" file, but it is just an example):
 	$usersData = Array
 	(
 		//User IDs:
@@ -64,18 +64,18 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 	);
 	
 	//Gets the data needed which has been sent through the REST client:
-	$usernameId = getVariable("id"); //"getVariable" and other functions available in the "src/_code/functions.php" file.
+	$userId = getVariable("id"); //"getVariable" and other functions available in the "src/_code/functions.php" file.
 ```
 
 4) Inside the **myRESTService/user/get.php** file put the following code:
 ```php
 <?php
-	if ($usernameId === "") { echo "No id sent!"; }
-	else if (array_key_exists($usernameId, $usersData))
+	if ($userId === "") { echo "No id sent!"; }
+	else if (array_key_exists($userId, $usersData))
 	{
-		echo $usersData[$usernameId]["name"] . " likes eating " . $usersData[$usernameId]["favouriteFood"];
+		echo $usersData[$userId]["name"] . " likes eating " . $usersData[$userId]["favouriteFood"];
 	}
-	else { echo "User cannot be found! (id=" . $usernameId . ")"; }
+	else { echo "User cannot be found! (id=" . $userId . ")"; }
 ```
 
 5) With this, we will have our REST server configured with the **myRESTService/user/** route, accepting the **GET** method with the **id** parameter. This example can be found in the **[example_easy/](example_easy/)** folder.
