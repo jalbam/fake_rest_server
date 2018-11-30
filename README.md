@@ -40,7 +40,7 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 
 1) In the root folder (where the **[src/_code/](src/_code/)** folder and the **[src/index.php](src/index.php)** file are placed), create a folder called **myRESTService**.
 
-2) Inside the **myRESTService** folder we have just created, create another folder called **user** and inside of it create two files: **index.php** and **get.php**.
+2) Inside the **myRESTService/** folder we have just created, create another folder called **user/** and inside of it create two files: **index.php** and **get.php**.
 
 3) Inside the **myRESTService/user/index.php** file, place the following code:
 ```php
@@ -78,7 +78,7 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 	else { echo "User cannot be found! (id=" . $usernameId . ")"; }
 ```
 
-5) With this, we will have our REST server configured with the **myRESTService/user/** route, accepting the **GET** method with the **id** parameter. This example can be found in the **[example_easy](example_easy)** folder.
+5) With this, we will have our REST server configured with the **myRESTService/user/** route, accepting the **GET** method with the **id** parameter. This example can be found in the **[example_easy/](example_easy/)** folder.
 
 
 ## Testing the server
@@ -100,9 +100,9 @@ Note that the "_/_" character at the end of the route is optional.
 
 ## Final comments
 
-It is very easy to extend using PHP language. The project already includes some examples with routes, methods, functions and data as user accounts, etc. as examples (in both the **[example](example)** and the **[example_easy](example_easy)** folder) but they can be deleted.
+It is very easy to extend using PHP language. The project already includes some examples with routes, methods, functions and data as user accounts, etc. as examples (in both the **[example/](example/)** and the **[example_easy/](example_easy/)** folder) but they can be deleted.
 
-The only really-needed code is located in the **[src](src)** folder. Inside of it, the **[route_1](src/route_1)** folder and all of its content can also be deleted since it is just an example.
+The only really-needed code is located in the **[src/](src/)** folder. Inside of it, the **[route_1/](src/route_1/)** folder and all of its content can also be deleted since it is just an example.
 
 
 ## License
