@@ -19,7 +19,7 @@ I made it just to create different REST servers very fast for testing purposes.
 
 To add new paths (routes) and methods, the developer just needs to create a new folder structure (folder and subfolders if needed) which represents the route and inside one file per method named _[method_desired].php_ (for example, _put.php_).
 
-To start developing your REST server, you will only need to download the files inside the **src** folder.
+To start developing your REST server, you will only need to download the files inside the **[src/](src/)** folder.
 
 You may want to take a look at the **[src/_code/functions.php](src/_code/functions.php)** file (the engine will include it automatically) as it provides some basic but useful functions. There you can also add new functions or modify the existing ones.
 
