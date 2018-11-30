@@ -38,7 +38,7 @@ Note: this authorization code above is also defined in the **AUTHORIZATION_CODE*
 <a name="example"></a>
 ### Example:
 
-1) In the root folder (where the **[src/_code/](src/_code/)** folder and the **[src/index.php](src/index.php)** file are placed), create a folder called **myRESTService**.
+1) In the root folder (where the **[src/_code/](src/_code/)** folder and the **[src/index.php](src/index.php)** file are placed), create a folder called **myRESTService/**.
 
 2) Inside the **myRESTService/** folder we have just created, create another folder called **user/** and inside of it create two files: **index.php** and **get.php**.
 
